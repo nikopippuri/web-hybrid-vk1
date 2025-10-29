@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Button, Text, TextInput, View } from "react-native";
 
 export default function Index() {
-  const [age, setAge] = useState("");
-  const [lowerLimit, setLowerLimit] = useState(0);
-  const [upperLimit, setUpperLimit] = useState(0);
+  const [age, setAge] = useState<string>("");
+  const [lowerLimit, setLowerLimit] = useState<number>(0);
+  const [upperLimit, setUpperLimit] = useState<number>(0);
 
  
   const calculateLimits = () => {
